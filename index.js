@@ -3,6 +3,9 @@ const bodyParser = require('body-parser');
 const db = require('./db/queries');
 const app = express();
 
+/**
+ * The deprecated stuff from body-parser.
+ */
 app.use(bodyParser.json());
 app.use(
   bodyParser.urlencoded({
